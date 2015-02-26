@@ -1,0 +1,76 @@
+---
+title: "Case Study 3 - Patterns in DNA"
+author: "Paul Samra, Brian Whiteaker, Rajat Shah, Janis Corona, Henry Qiu"
+date: "02/26/2015"
+output: html_document
+---
+
+
+**Some quick notes on using rMarkdown.  will be removed later on**
+
+*ctrl + i* to insert a "chunk" of code
+
+*ctrl + alt + c* to run a "chunk" of code
+
+
+```{r}
+cmv = read.table(file="http://www.stat.berkeley.edu/users/statlabs/data/hcmv.data", header=T)
+```
+
+
+* [Random scatter] To begin, pursue the point of view that structure in the data is
+indicated by departures from a uniform scatter of palindromes across the DNA.
+** Of course, a random uniform scatter, does not mean that the
+palindromes will be equally spaced as milestones on a freeway. There
+will be some gaps on the DNA where no palindromes occur, and there
+will be some clumping together of palindromes.
+To look for structure examine the locations of the palindromes, the spacing between
+palindromes, and the counts of palindromes in non overlapping regions of the DNA.
+One starting place might be to see first how random scatter looks by using a
+computer to simulate it.
+** A computer can simulate 296 palindrome sites chosen at random along
+a DNA sequence of 229,354 bases using a pseudo random number
+generator. When this is done several times,by making seller sets of
+simulated palindrome locations, then the real data can be compared to
+the simulated data.
+
+```{r}
+
+```
+
+
+* [Locations and spacings] Use graphical methods to examine the spacings between
+consecutive palindromes and sum of consecutive pairs, triplets, etc, spacings.
+Compare what you find to what would you expect to find in a random scatter. Also,
+use graphical methods to compare locations of the palindromes.
+
+```{r}
+
+```
+
+*[Counts] Use graphical methods and more formal statistical tests to examine the
+counts of palindromes in various regions of the DNA. Split the DNA into nonoverlaping
+regions of equal length to compare the number of palindromes in an interval to the
+number of that would you expect from uniform random scatter. The counts for shorter
+regions will be more variable than those for longer regions. Also consider classifying
+the regions according to their number of counts.
+
+```{r}
+
+```
+
+* [The biggest cluster] Does the interval with the greatest number of palindromes
+indicate a potential origin of replication?Be careful in making your intervals, for any
+small, but significant ,deviations from random scatter, such as a tight cluster of a few
+palindromes, could easily go undetected if the regions examined are too large. Also, if
+the regions are too small, a cluster of palindromes may be split between adjacent
+intervals and not appear as a high-count interval.
+
+```{r}
+
+```
+
+How would you advise biologist who is a bout to start experimentally
+searching for the origin of replication? Write your recommendations
+in the form of a report that a team members including biologist will
+read.
