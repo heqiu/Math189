@@ -14,7 +14,9 @@ output: html_document
 
 
 ```{r}
-cmv = read.table(file="http://www.stat.berkeley.edu/users/statlabs/data/hcmv.data", header=T)
+hcmv = read.table(file="http://www.stat.berkeley.edu/users/statlabs/data/hcmv.data", header=T)
+
+hist(hcmv$location, breaks=50, xlab = "DNA Strand", col = "red")
 ```
 
 
