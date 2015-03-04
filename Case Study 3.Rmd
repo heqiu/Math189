@@ -1,10 +1,9 @@
 ---
-title: "Case Study 3 - Patterns in DNA"
+title: "Case Study 3 - Patterns in DNA, Snow Gauge DNA"
 author: "Paul Samra, Brian Whiteaker, Rajat Shah, Janis Corona, Henry Qiu"
 date: "02/26/2015"
 output: html_document
 ---
-
 
 **Some quick notes on using rMarkdown.  will be removed later on**
 
@@ -12,13 +11,18 @@ output: html_document
 
 *ctrl + alt + c* to run a "chunk" of code
 
-
 ```{r}
 hcmv = read.table(file="http://www.stat.berkeley.edu/users/statlabs/data/hcmv.data", header=T)
 
 hist(hcmv$location, breaks=50, xlab = "DNA Strand", col = "red")
+d <- density(hcmv$location)
+plot(d, col = "red")
+     
 ```
-
+**Language and Description** 
+**Basic Analysis**
+**Advanced Analysis**
+**Theoretical Support for Chosen Analysis** 
 
 * [Random scatter] To begin, pursue the point of view that structure in the data is
 indicated by departures from a uniform scatter of palindromes across the DNA.
